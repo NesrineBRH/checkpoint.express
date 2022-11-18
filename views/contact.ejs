@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Contact us</title>
+  <style>
+h1 {color:brown; text-align: center;} label{margin-left: 30%;}
+form {position: relative; width: 60%;height : 498px; margin : 0 auto; background-color: gainsboro;}
+input, textarea{background : rgba(0,0,0,.1);border-radius: 5px; outline: none;margin-top: 5%;}
+button{margin-left:40%;margin-top: 5%;}
+.info{justify-content:center;}
+ul {list-style-type: none; margin: 0; padding: 0;}
+   </style>
+  <script src="script.js"></script>
+</head>
+<body>
+    <ul>
+    <li><a href="home.ejs">Home</a></li>
+    <li><a href="services.ejs">Services</a></li>
+    <li><a href="">Contact</a></li>
+  </ul>
+  <h1>Fill in the Form</h1>
+  <form method="post">
+    <div class="info">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="user_name">
+    </div>
+    <div class="info">
+        <label for="mail">e-mail&nbsp;:</label>
+        <input type="email" id="mail" name="user_mail">
+    </div>
+    <div class="info">
+        <label for="msg">Message :</label>
+        <textarea id="msg" name="user_message"></textarea>
+    </div>
+    <div class="button">
+      <button type="submit">Envoyer le message</button>
+  </div>
+</form>
+</body>
+</html>
